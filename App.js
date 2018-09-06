@@ -12,7 +12,6 @@ import {
   View,
   Image,
   ImageBackGround
-
 } from 'react-native';
 import Judul from './Components/Judul';
 
@@ -30,6 +29,8 @@ export default class App extends Component<Props> {
     return (
     <View style={styles.container} >
     <Judul/>
+    <Judul title="BIODATA"/>
+    <Judul title="PROFILE"/>
     <Text style={styles.welcome}>
      Nama = Didi Kurniawan
     </Text>
@@ -49,6 +50,7 @@ export default class App extends Component<Props> {
   </View>
     );
   }
+
 }
 
 const styles = StyleSheet.create({
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red',
+    backgroundColor: '#ff7675',
   },
   welcome: {
     fontSize: 20,
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: 'center',
-    color: 'white',
+    color: '#192a56',
     marginBottom: 5,
   },
 });
